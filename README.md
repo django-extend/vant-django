@@ -1,36 +1,41 @@
-# myvue
 
-## lib
+<h1 align="center">Vant-Django</h1>
+<div align="center">
+Django Admin 的移动端框架. 使用<a href="https://vant-contrib.gitee.io/vant/#/zh-CN/" target="_blank">Vant</a>书写
+</div>
 
-> vuex  (会话)
-> vue-router (路由)
-> axios (ajax)
-> vant
-> moment (时间)
+### 后端依赖
 
-> (DEV)
-> eslint (代码检查)
-> babel-plugin-import (按需加载)
+> 后端依赖 <a href="https://github.com/django-extend/django-admin-api.git">django-admin-api</a>.
+> 
+> 需要先按照`django-admin-api`的向导建立一个后端项目（假设后端服务已经成功运行在http://localhost:8000）
 
-## Project setup
+### 前端项目安装
+
+- 克隆仓库
+```bash
+git clone https://github.com/django-extend/vant-django.git my-project
+cd my-project
 ```
-npm install
+
+github不稳定的话，国内可使用码云仓库
+```
+git clone https://gitee.com/django-extend/vant-django.git my-project
 ```
 
-### Compiles and hot-reloads for development
+- 安装依赖
+
+```
+npm install --registry=https://registry.npm.taobao.org
+```
+
+也可尝试使用cnpm安装
+```
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+cnpm install
+```
+
+- 编译并运行（开发环境）
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
