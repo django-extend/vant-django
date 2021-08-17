@@ -18,7 +18,7 @@
   </div>
 </template>
 <script>
-import VanxDatetimePicker from '../components/DatetimePicker'
+import VanxDatetimePicker from '@/components/vantx/DatetimePicker'
 import moment from 'moment'
 
 export default {

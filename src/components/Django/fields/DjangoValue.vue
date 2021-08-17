@@ -15,7 +15,6 @@
 <script>
 import moment from 'moment'
 export default {
-  components: { moment },
   props: {
     value: {
       type: [String, Number, Boolean, Array],

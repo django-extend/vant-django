@@ -65,7 +65,7 @@
   </div>
 </template>
 <script>
-import VanxInput from '../components/Input'
+import VanxInput from '@/components/vantx/Input'
 import DjangoChoiceField from './DjangoChoiceField'
 import DjangoDatetimeField from './DjangoDatetimeField'
 import DjangoImageField from './DjangoImageField'

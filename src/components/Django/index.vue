@@ -86,8 +86,8 @@
 </template>
 <script>
 import * as resource from '@/components/Django/api/resource'
-import VanxFilter from '@/components/Django/components/Filter'
-import VanxList from '@/components/Django/components/List'
+import VanxFilter from '@/components/vantx/Filter'
+import VanxList from '@/components/vantx/List'
 import DjangoValue from '@/components/Django/fields/DjangoValue'
 
 export default {
