@@ -21,10 +21,12 @@ router.beforeEach(async (to, from, next) => {
       } else {
         // 刷新页面，则需要重新从服务器读取路由信息
         try {
+          // 动态菜单步骤1.从后端读取菜单列表
           const { menus } = await store.dispatch('user/getInfo')
 
-          // 根据服务器返回的菜单重置路由
+          // 动态菜单步骤2.向vuex发起指令，通知生成菜单
           const accessRoutes = await store.dispatch('permission/generateRoutes', menus)
+          // 动态菜单步骤6.将动态路由写入vue-router
           accessRoutes.forEach(route => {
             router.addRoute(route)
           })
